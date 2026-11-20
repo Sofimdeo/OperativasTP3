@@ -1,0 +1,773 @@
+{
+  "parametros": {
+    "digito": 5,
+    "stock_inicial_almidon_t": 15000,
+    "maiz_noviembre_t": 57500,
+    "almidon_noviembre_t": 38333.333333333336,
+    "precio_almidon_int_ARS": 640000,
+    "precio_almidon_ext_USD": 300,
+    "precio_jarabe_int_ARS": 750000,
+    "precio_jarabe_ext_USD": 365,
+    "costo_ref_almidon_USD": 245.0,
+    "costo_proceso_almidon_USD": 95,
+    "composicion_interna_A_J": [
+      0.45,
+      0.55
+    ],
+    "composicion_externa_A_J": [
+      0.55,
+      0.44999999999999996
+    ],
+    "caja_para_anticipo_ARS": 10138750000.0,
+    "maiz_max_anticipo_t": 59118.07580174927
+  },
+  "pronostico": {
+    "di": {
+      "metodo": "Estacional x crecimiento interanual",
+      "nov": 36166.7901407436,
+      "dic": 34992.13668794198,
+      "sd_rel_nov": 0.02,
+      "sd_rel_dic": 0.02,
+      "rho_nov_dic": 0.9999700396702768,
+      "sd_rel_estadistico": [
+        8.550724490297008e-05,
+        0.00010271944015434387
+      ],
+      "nov_li90": 34976.90274511313,
+      "nov_ls90": 37356.67753637407,
+      "dic_li90": 33840.89539090869,
+      "dic_ls90": 36143.37798497527
+    },
+    "de": {
+      "metodo": "Regresión tendencia + 1 armónico",
+      "nov": 19033.731491221002,
+      "dic": 18222.849677572383,
+      "sd_rel_nov": 0.04781146075097125,
+      "sd_rel_dic": 0.041948239940842874,
+      "rho_nov_dic": -0.19427127596873517,
+      "nov_li90": 17536.731308625574,
+      "nov_ls90": 20530.73167381643,
+      "dic_li90": 16965.384583302603,
+      "dic_ls90": 19480.314771842164
+    },
+    "tc": {
+      "metodo": "Deriva log últimos 6 meses",
+      "nov": 1767.7416948472364,
+      "dic": 1822.1053642573645,
+      "sd_rel_nov": 0.005488751795900416,
+      "sd_rel_dic": 0.007814539941279921,
+      "rho_nov_dic": 0.6730078336520637,
+      "nov_li90": 1751.7807609104846,
+      "nov_ls90": 1783.7026287839883,
+      "dic_li90": 1798.6823488418497,
+      "dic_ls90": 1845.5283796728793
+    },
+    "rho_int_ext": -0.1304826103968525
+  },
+  "demanda_por_producto": [
+    {
+      "mes": "nov",
+      "Almidón interno": 16275.055563334621,
+      "Jarabe interno": 19891.73457740898,
+      "Almidón externo": 10468.552320171551,
+      "Jarabe externo": 8565.17917104945,
+      "Total (t almidón eq.)": 55200.5216319646
+    },
+    {
+      "mes": "dic",
+      "Almidón interno": 15746.461509573892,
+      "Jarabe interno": 19245.675178368092,
+      "Almidón externo": 10022.567322664812,
+      "Jarabe externo": 8200.282354907571,
+      "Total (t almidón eq.)": 53214.98636551436
+    }
+  ],
+  "replicas": [
+    {
+      "replica": 1,
+      "Jn": 27719.516258096868,
+      "Pd": 52821.38689203,
+      "C_maiz": 79232.080338045,
+      "Jd": 27101.227226451327,
+      "F": 59118.07580174927,
+      "obj_en_muestra_MARS": 37624.635928923504,
+      "obj_fuera_muestra_MARS": 37580.73656498463
+    },
+    {
+      "replica": 2,
+      "Jn": 27444.30108206041,
+      "Pd": 52633.52597491021,
+      "C_maiz": 78950.28896236532,
+      "Jd": 27032.563762356975,
+      "F": 59118.07580174927,
+      "obj_en_muestra_MARS": 37553.29647464264,
+      "obj_fuera_muestra_MARS": 37576.25200494965
+    },
+    {
+      "replica": 3,
+      "Jn": 27872.617567223082,
+      "Pd": 52699.060101274954,
+      "C_maiz": 79048.59015191243,
+      "Jd": 27021.192701974764,
+      "F": 59118.07580174927,
+      "obj_en_muestra_MARS": 37563.37159795555,
+      "obj_fuera_muestra_MARS": 37576.74784813833
+    },
+    {
+      "replica": 4,
+      "Jn": 27602.727578777307,
+      "Pd": 52739.078430954265,
+      "C_maiz": 79108.6176464314,
+      "Jd": 27066.56319005212,
+      "F": 59118.07580174927,
+      "obj_en_muestra_MARS": 37570.875225578,
+      "obj_fuera_muestra_MARS": 37580.98182540471
+    },
+    {
+      "replica": 5,
+      "Jn": 27881.031819634434,
+      "Pd": 52859.20670920912,
+      "C_maiz": 79288.81006381367,
+      "Jd": 27137.353051680748,
+      "F": 59118.07580174927,
+      "obj_en_muestra_MARS": 37635.79701133156,
+      "obj_fuera_muestra_MARS": 37574.96717634271
+    }
+  ],
+  "optimo_lp": {
+    "estado": "Optimal",
+    "objetivo": 37586916508.75646,
+    "Pd": 52727.5657428694,
+    "F": 59118.07580174927,
+    "Q": 19973.27281255484,
+    "C": 79091.34861430411,
+    "Jn": 27707.46505852692,
+    "Jd": 27060.84820023882,
+    "stock_nov_medio": 14.106440544482393
+  },
+  "plan": {
+    "Jn": 27707,
+    "maiz_dic": 79091,
+    "Pd": 52727.333333333336,
+    "Jd": 27061,
+    "F": 59118.07,
+    "Q_spot": 19972.93,
+    "anticipo_ARS": 10138749005.0,
+    "pago_dic_esperado_ARS": 3639278289.2936845,
+    "horas_nov": 45260.083333333336,
+    "horas_dic": 59492.583333333336
+  },
+  "evaluacion_plan": {
+    "media_MARS": 37581.45958301595,
+    "desvio_MARS": 306.1620622754874,
+    "p05_MARS": 36943.46279252046,
+    "p50_MARS": 37659.34750578301,
+    "p95_MARS": 37912.87507756576,
+    "CVaR5_MARS": 36661.11683491437
+  },
+  "nivel_servicio": [
+    {
+      "mes": "nov",
+      "producto": "Almidón",
+      "mercado": "Interno",
+      "demanda_media_t": 16271.799852316475,
+      "ventas_medias_t": 16271.799852316475,
+      "P_satisfaccion_total": 1.0,
+      "fill_rate": 1.0,
+      "faltante_medio_t": 0.0
+    },
+    {
+      "mes": "nov",
+      "producto": "Almidón",
+      "mercado": "Externo",
+      "demanda_media_t": 10460.145310038013,
+      "ventas_medias_t": 9347.254396402592,
+      "P_satisfaccion_total": 0.0322,
+      "fill_rate": 0.8936065531931527,
+      "faltante_medio_t": 1112.890913635423
+    },
+    {
+      "mes": "nov",
+      "producto": "Jarabe",
+      "mercado": "Interno",
+      "demanda_media_t": 19887.75537505347,
+      "ventas_medias_t": 19887.75537505347,
+      "P_satisfaccion_total": 1.0,
+      "fill_rate": 1.0,
+      "faltante_medio_t": 0.0
+    },
+    {
+      "mes": "nov",
+      "producto": "Jarabe",
+      "mercado": "Externo",
+      "demanda_media_t": 8558.300708212919,
+      "ventas_medias_t": 7793.481794003773,
+      "P_satisfaccion_total": 0.09715,
+      "fill_rate": 0.9106342555274796,
+      "faltante_medio_t": 764.8189142091461
+    },
+    {
+      "mes": "dic",
+      "producto": "Almidón",
+      "mercado": "Interno",
+      "demanda_media_t": 15743.299613081834,
+      "ventas_medias_t": 15743.299613081834,
+      "P_satisfaccion_total": 1.0,
+      "fill_rate": 1.0,
+      "faltante_medio_t": 0.0
+    },
+    {
+      "mes": "dic",
+      "producto": "Almidón",
+      "mercado": "Externo",
+      "demanda_media_t": 10022.065537446,
+      "ventas_medias_t": 9762.298164180465,
+      "P_satisfaccion_total": 0.4285,
+      "fill_rate": 0.9740804555413302,
+      "faltante_medio_t": 259.7673732655344
+    },
+    {
+      "mes": "dic",
+      "producto": "Jarabe",
+      "mercado": "Interno",
+      "demanda_media_t": 19241.810638211133,
+      "ventas_medias_t": 19241.810638211133,
+      "P_satisfaccion_total": 1.0,
+      "fill_rate": 1.0,
+      "faltante_medio_t": 0.0
+    },
+    {
+      "mes": "dic",
+      "producto": "Jarabe",
+      "mercado": "Externo",
+      "demanda_media_t": 8199.87180336491,
+      "ventas_medias_t": 7750.615022896633,
+      "P_satisfaccion_total": 0.2291,
+      "fill_rate": 0.9452117312024416,
+      "faltante_medio_t": 449.25678046827477
+    }
+  ],
+  "stocks_esperados": {
+    "almidon_cierre_nov_medio": 7.279084614271902,
+    "almidon_cierre_nov_p95": 0.0,
+    "almidon_cierre_dic_medio": 168.01464068530848,
+    "almidon_cierre_dic_p95": 783.1968504331772,
+    "P_stock_dic_mayor_0": 0.4285,
+    "jarabe_vencido_nov_medio": 25.76283094275886,
+    "jarabe_vencido_dic_medio": 68.57433889223603,
+    "desborde_deposito_P": 0.0
+  },
+  "resultado_por_mes_MARS": {
+    "nov": 27162.76879266473,
+    "dic": 20557.439795351227,
+    "anticipo": -10138.749005
+  },
+  "comparacion_planes": [
+    {
+      "plan": "Plan recomendado (estocástico)",
+      "Jn": 27707.0,
+      "maiz_dic": 79091.0,
+      "Jd": 27061.0,
+      "F": 59118.07,
+      "media_MARS": 37581.45958301595,
+      "desvio_MARS": 306.1620622754874,
+      "p05_MARS": 36943.46279252046,
+      "p50_MARS": 37659.34750578301,
+      "p95_MARS": 37912.87507756576,
+      "CVaR5_MARS": 36661.11683491437,
+      "fill_externo": 0.9305395447560844
+    },
+    {
+      "plan": "Plan determinístico (valores esperados)",
+      "Jn": 28456.91374845843,
+      "maiz_dic": 79707.76592502164,
+      "Jd": 27445.957533275665,
+      "F": 59118.07580174927,
+      "media_MARS": 37449.02158326581,
+      "desvio_MARS": 510.0762164241269,
+      "p05_MARS": 36419.1306224045,
+      "p50_MARS": 37589.028954264184,
+      "p95_MARS": 38013.01966586147,
+      "CVaR5_MARS": 36099.97544893283,
+      "fill_externo": 0.9321390210864423
+    },
+    {
+      "plan": "Recomendado sin anticipo (F = 0)",
+      "Jn": 27707.0,
+      "maiz_dic": 79091.0,
+      "Jd": 27061.0,
+      "F": 0.0,
+      "media_MARS": 36949.19868348912,
+      "desvio_MARS": 323.54277665503344,
+      "p05_MARS": 36300.4427655996,
+      "p50_MARS": 37015.342044083016,
+      "p95_MARS": 37336.53141144318,
+      "CVaR5_MARS": 36012.96483474886,
+      "fill_externo": 0.9305395447560844
+    },
+    {
+      "plan": "Recomendado con mínimo de continuidad en dic.",
+      "Jn": 27707.0,
+      "maiz_dic": 45000.0,
+      "Jd": 27061.0,
+      "F": 59118.07,
+      "media_MARS": 33996.78608444802,
+      "desvio_MARS": 226.04933156822614,
+      "p05_MARS": 33529.33194778518,
+      "p50_MARS": 34052.85209940781,
+      "p95_MARS": 34239.869235493825,
+      "CVaR5_MARS": 33306.46503125905,
+      "fill_externo": 0.6683967501974195
+    }
+  ],
+  "VSS_MARS": 132.43799975014554,
+  "valor_marginal_anticipo_ARS_por_t": 10694.883975862467,
+  "C2": {
+    "criterio": "Nivel de servicio tipo 1 (probabilidad de no tener faltante en el mes) >= 95% en el mercado externo de almidón, respetando la prioridad del interno",
+    "q95_demanda_almidon_nov": 27717.35845837691,
+    "q95_demanda_almidon_dic": 26618.7810738146,
+    "almidon_para_venta_dic_plan": 25666.333333333336,
+    "almidon_para_venta_nov_plan": 25626.333333333336,
+    "a_Pd_requerido": 53679.7810738146,
+    "a_Pd_max_por_horas": 53234.75,
+    "a_factible": false,
+    "a_almidon_adicional_t": 507.41666666666424,
+    "a_maiz_adicional_t": 761.1249999999964,
+    "a_costo_MARS": 21.747521363337,
+    "a_P_ext_almidon_dic": 0.78675,
+    "b_plan": {
+      "Jn": 27713.01638908472,
+      "Pd": 53323.75621476292,
+      "Jd": 26704.97514094832,
+      "F": 59118.07
+    },
+    "b_almidon_adicional_produccion_t": 596.4228814295857,
+    "b_almidon_adicional_para_venta_t": 952.4477404812642,
+    "b_costo_MARS": 88.50563129624788,
+    "b_P_ext_almidon_dic": 0.95035,
+    "b_P_ext_jarabe_dic": 0.0757,
+    "c_plan": {
+      "Jn": 25615.974874956424,
+      "Pd": 53323.75621476292,
+      "Jd": 26704.97514094832,
+      "F": 59118.07
+    },
+    "c_almidon_liberado_nov_t": 2091.025125043576,
+    "c_costo_MARS": 408.9756039857166,
+    "c_P_ext_almidon_nov": 0.95,
+    "c_P_ext_almidon_dic": 0.9902,
+    "c_P_ext_jarabe_nov": 0.0,
+    "costo_directo_por_t_extra_USD": {
+      "produccion_almidon": 245.0,
+      "valor_si_se_vende_ext": 300,
+      "valor_si_sobra_al_cierre": 172.0
+    }
+  },
+  "C3": {
+    "obj_plan_fijo_MARS": 37624.635928923504,
+    "obj_jarabe_flexible_MARS": 37728.577151607155,
+    "valor_flexibilidad_MARS": 103.94122268364715,
+    "Pd_fijo": 52821.38689203,
+    "Pd_flexible": 52928.706882592625,
+    "Jn_fijo": 27719.516258096868,
+    "Jn_flexible_medio": 28480.76934325733,
+    "Jd_fijo": 27101.227226451327,
+    "Jd_flexible_medio": 27485.391240146353,
+    "stock_nov_fijo": 5.490627863357076,
+    "stock_nov_flexible": 32.22569483170424,
+    "colchon_1000_costo_MARS": 66.54968088717578,
+    "colchon_2000_costo_MARS": 253.3560777992825,
+    "colchon_dic_1000_costo_MARS": 21.747521363337,
+    "colchon_dic_1000_efectivo_t": 507.41666666666424,
+    "colchon_dic_2000_costo_MARS": 21.747521363337,
+    "colchon_dic_2000_efectivo_t": 507.41666666666424
+  },
+  "robustez": [
+    {
+      "escenario": "Base",
+      "plan": "Recomendado",
+      "media_MARS": 37581.45958301595,
+      "p05_MARS": 36943.46279252046,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9305395447560844,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 168.01464068530848,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Base",
+      "plan": "Determinístico",
+      "media_MARS": 37449.02158326581,
+      "p05_MARS": 36419.1306224045,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9321390210864423,
+      "jarabe_vencido_t": 439.72452269947604,
+      "stock_dic_t": 174.23945945230992,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Base",
+      "plan": "Sin anticipo",
+      "media_MARS": 36949.19868348912,
+      "p05_MARS": 36300.4427655996,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9305395447560844,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 168.01464068530848,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda externa -20%",
+      "plan": "Recomendado",
+      "media_MARS": 35494.17735399744,
+      "p05_MARS": 34033.83910250618,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9996128203767151,
+      "jarabe_vencido_t": 2238.091825939391,
+      "stock_dic_t": 2897.1376488948586,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda externa -20%",
+      "plan": "Determinístico",
+      "media_MARS": 34979.39290691443,
+      "p05_MARS": 33537.89598498476,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9963460227872002,
+      "jarabe_vencido_t": 3366.817558440361,
+      "stock_dic_t": 2276.9146354136446,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda externa -20%",
+      "plan": "Sin anticipo",
+      "media_MARS": 34861.91645447061,
+      "p05_MARS": 33397.29912829961,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9996128203767151,
+      "jarabe_vencido_t": 2238.091825939391,
+      "stock_dic_t": 2897.1376488948586,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda externa +20%",
+      "plan": "Recomendado",
+      "media_MARS": 37684.885354617094,
+      "p05_MARS": 37459.236039604424,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.781319673824919,
+      "jarabe_vencido_t": 0.01659383676386751,
+      "stock_dic_t": 0.011579106435326138,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda externa +20%",
+      "plan": "Determinístico",
+      "media_MARS": 37786.292102814354,
+      "p05_MARS": 37559.94222631723,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.790500509601533,
+      "jarabe_vencido_t": 0.9138425562908705,
+      "stock_dic_t": 0.014201081442535542,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda externa +20%",
+      "plan": "Sin anticipo",
+      "media_MARS": 37052.62445509026,
+      "p05_MARS": 36774.68939080851,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.781319673824919,
+      "jarabe_vencido_t": 0.01659383676386751,
+      "stock_dic_t": 0.011579106435326138,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda interna -10%",
+      "plan": "Recomendado",
+      "media_MARS": 34614.879901293054,
+      "p05_MARS": 33205.133145478096,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9983747202596641,
+      "jarabe_vencido_t": 2795.2328842803704,
+      "stock_dic_t": 2055.3775331236648,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda interna -10%",
+      "plan": "Determinístico",
+      "media_MARS": 34050.89492288064,
+      "p05_MARS": 32701.778908556702,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9902526718959083,
+      "jarabe_vencido_t": 3928.098704698582,
+      "stock_dic_t": 1636.15719078032,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda interna -10%",
+      "plan": "Sin anticipo",
+      "media_MARS": 33982.61900176622,
+      "p05_MARS": 32563.172641556823,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9983747202596641,
+      "jarabe_vencido_t": 2795.2328842803704,
+      "stock_dic_t": 2055.3775331236648,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda interna +10%",
+      "plan": "Recomendado",
+      "media_MARS": 38382.50028583333,
+      "p05_MARS": 38127.56124336698,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.7465404801870176,
+      "jarabe_vencido_t": 0.0,
+      "stock_dic_t": 0.08096491481689154,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda interna +10%",
+      "plan": "Determinístico",
+      "media_MARS": 38484.415007928386,
+      "p05_MARS": 38229.69306465009,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.7575773998914973,
+      "jarabe_vencido_t": 0.13359228449305333,
+      "stock_dic_t": 0.1055350800783389,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Demanda interna +10%",
+      "plan": "Sin anticipo",
+      "media_MARS": 37750.23938630649,
+      "p05_MARS": 37429.472304785675,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.7465404801870176,
+      "jarabe_vencido_t": 0.0,
+      "stock_dic_t": 0.08096491481689154,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Devaluación: TC dic +15%",
+      "plan": "Recomendado",
+      "media_MARS": 37080.665110458634,
+      "p05_MARS": 36498.530913953386,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9305395447560844,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 168.01464068530848,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Devaluación: TC dic +15%",
+      "plan": "Determinístico",
+      "media_MARS": 36937.81142873012,
+      "p05_MARS": 35939.936111904724,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9321390210864423,
+      "jarabe_vencido_t": 439.72452269947604,
+      "stock_dic_t": 174.23945945230992,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Devaluación: TC dic +15%",
+      "plan": "Sin anticipo",
+      "media_MARS": 34832.75272525278,
+      "p05_MARS": 34230.02893374174,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9305395447560844,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 168.01464068530848,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Apreciación: TC -10%",
+      "plan": "Recomendado",
+      "media_MARS": 37884.7725587893,
+      "p05_MARS": 37198.089861148146,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9305395447560844,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 168.01464068530848,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Apreciación: TC -10%",
+      "plan": "Determinístico",
+      "media_MARS": 37760.85332514709,
+      "p05_MARS": 36700.53861070611,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9321390210864423,
+      "jarabe_vencido_t": 439.72452269947604,
+      "stock_dic_t": 174.23945945230992,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Apreciación: TC -10%",
+      "plan": "Sin anticipo",
+      "media_MARS": 38329.61264971515,
+      "p05_MARS": 37638.173393419,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9305395447560844,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 168.01464068530848,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Maíz 120 USD/t",
+      "plan": "Recomendado",
+      "media_MARS": 36853.666450214354,
+      "p05_MARS": 36216.5224808295,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9305395447560844,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 168.01464068530848,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Maíz 120 USD/t",
+      "plan": "Determinístico",
+      "media_MARS": 36698.7543426441,
+      "p05_MARS": 35666.83432199965,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9321390210864423,
+      "jarabe_vencido_t": 439.72452269947604,
+      "stock_dic_t": 174.23945945230992,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Maíz 120 USD/t",
+      "plan": "Sin anticipo",
+      "media_MARS": 34067.203569782156,
+      "p05_MARS": 33411.1968163915,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9305395447560844,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 168.01464068530848,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Rendimiento 1,60 t maíz/t almidón",
+      "plan": "Recomendado",
+      "media_MARS": 35521.63251514255,
+      "p05_MARS": 35003.610823513736,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.7822253619312889,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 0.0,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Rendimiento 1,60 t maíz/t almidón",
+      "plan": "Determinístico",
+      "media_MARS": 35381.06169113311,
+      "p05_MARS": 34447.88991044082,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.7833019177198662,
+      "jarabe_vencido_t": 439.72452269947604,
+      "stock_dic_t": 0.0,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Rendimiento 1,60 t maíz/t almidón",
+      "plan": "Sin anticipo",
+      "media_MARS": 34889.37161561572,
+      "p05_MARS": 34355.19716676725,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.7822253619312889,
+      "jarabe_vencido_t": 94.33716983499487,
+      "stock_dic_t": 0.0,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Combinado: ext -20%, TC -10%, rend. 1,60",
+      "plan": "Recomendado",
+      "media_MARS": 34648.28422210403,
+      "p05_MARS": 33457.59441217228,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9058197137112964,
+      "jarabe_vencido_t": 2238.091825939391,
+      "stock_dic_t": 0.15898115423859735,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Combinado: ext -20%, TC -10%, rend. 1,60",
+      "plan": "Determinístico",
+      "media_MARS": 34024.633458850076,
+      "p05_MARS": 32829.28722920441,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.8808740186695088,
+      "jarabe_vencido_t": 3366.817558440361,
+      "stock_dic_t": 0.10174900332689271,
+      "desborde_t": 0.0
+    },
+    {
+      "escenario": "Combinado: ext -20%, TC -10%, rend. 1,60",
+      "plan": "Sin anticipo",
+      "media_MARS": 35093.124313029875,
+      "p05_MARS": 33895.996474713385,
+      "P_interno_total": 1.0,
+      "fill_externo": 0.9058197137112964,
+      "jarabe_vencido_t": 2238.091825939391,
+      "stock_dic_t": 0.15898115423859735,
+      "desborde_t": 0.0
+    }
+  ],
+  "sensibilidad": [
+    {
+      "variante": "Base (CV interno 2%)",
+      "Jn": 27719.516258096868,
+      "maiz_dic": 79232.080338045,
+      "Jd": 27101.227226451327,
+      "F": 59118.07580174927,
+      "obj_MARS": 37624.635928923504
+    },
+    {
+      "variante": "CV mínimo demanda interna 0%",
+      "Jn": 27923.210760211026,
+      "maiz_dic": 79357.34581042329,
+      "Jd": 27194.683870010755,
+      "F": 59118.07580174927,
+      "obj_MARS": 37648.94461179138
+    },
+    {
+      "variante": "CV mínimo demanda interna 4%",
+      "Jn": 27438.79948004359,
+      "maiz_dic": 78892.13639814191,
+      "Jd": 26913.7531088417,
+      "F": 59118.07580174927,
+      "obj_MARS": 37531.011962300174
+    },
+    {
+      "variante": "Demanda externa: método combinado",
+      "Jn": 27921.305406073552,
+      "maiz_dic": 78748.31251680409,
+      "Jd": 26958.132908623404,
+      "F": 59118.07580174927,
+      "obj_MARS": 37599.049864326524
+    },
+    {
+      "variante": "Desvío demanda externa x2",
+      "Jn": 27481.224785038572,
+      "maiz_dic": 78691.13812665682,
+      "Jd": 26908.679782954212,
+      "F": 59118.07580174927,
+      "obj_MARS": 37488.26207749988
+    },
+    {
+      "variante": "TC con desvío 3% / 6%",
+      "Jn": 27719.516258096868,
+      "maiz_dic": 79231.15808928371,
+      "Jd": 27099.618867474408,
+      "F": 59118.07580174927,
+      "obj_MARS": 37612.1038456269
+    }
+  ],
+  "formulario": {
+    "1_jarabe_noviembre_t": "27707.00",
+    "2_maiz_diciembre_t": "79091.00",
+    "3_jarabe_diciembre_t": "27061.00",
+    "4_anticipo_maiz_t": "59118.07"
+  }
+}
