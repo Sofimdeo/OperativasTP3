@@ -23,6 +23,7 @@ src/graficos.py                figuras del informe
 main.py                        ejecuta todo (A, B, C, robustez y sensibilidad) -> resultados/
 informe/generar_informe.py     arma informe_TP3.html y informe_TP3.pdf desde resultados/
 informe/a_pdf.js               alternativa para imprimir el PDF con Playwright (Node)
+informe/a_docx.py              convierte el informe a Word editable (informe_TP3.docx; requiere pandoc)
 TP3_Stocks.ipynb               notebook equivalente para Colab/Jupyter
 resultados/                    CSV, JSON y figuras generadas
 ```
